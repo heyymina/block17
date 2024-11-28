@@ -18,10 +18,12 @@ class Numbers {
       //print the numbers in data
       this.data.forEach((num, idx) => console.log(`num: ${num}, idx: ${idx}`));
     }
-    
+
     odds() {
       //return the odd numbers in data
+      return this.data.filter((num) => num % 2 === 1);
     }
+    
     evens() {
       //return the even numbers in data
     }
